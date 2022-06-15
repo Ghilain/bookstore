@@ -8,8 +8,8 @@ const BookstoreContainer = () => (
   <div>
     <Navbar />
     <Routes>
-      <Route path="/" element={<HomePage />} />
-      <Route path="/categories" element={<Categorypage />} />
+      <Route exact path="/" element={<HomePage />} />
+      <Route exact path="/categories" element={<Categorypage />} />
     </Routes>
   </div>
 

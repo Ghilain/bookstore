@@ -1,16 +1,10 @@
 import React from 'react';
-import { v4 as uuidv4 } from 'uuid';
+import { useSelector } from 'react-redux';
 import InputBook from '../components/InputBook';
 import BookList from '../components/BooksList';
 
 const HomePage = () => {
-  const bookList = [
-    {
-      booktitle: ' Rich dad Poor dad',
-      author: ' Robert Kiyosaki',
-      id: uuidv4(),
-    },
-  ];
+  const bookList = useSelector((state) => state.booksReducer);
 
   return (
     <div className="container">
