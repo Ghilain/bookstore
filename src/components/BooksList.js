@@ -1,22 +1,22 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { fetchBooksList } from '../redux/books/books';
 import BookItem from './BookItem';
 
-const BookList = ({ bookList }) => (
-  <ul>
-    {bookList.map((book) => (
-      <BookItem key={book.id} book={book} />
-    ))}
-  </ul>
-);
+const BookList = () => {
+  const dispatch = useDispatch();
+  const booksList = useSelector((state) => state.booksReducer);
+  useEffect(() => {
+    dispatch(fetchBooksList());
+  }, [dispatch]);
 
-BookList.propTypes = {
-  bookList: PropTypes.arrayOf(
-    PropTypes.shape({
-      booktitle: PropTypes.string.isRequired,
-      author: PropTypes.string.isRequired,
-      id: PropTypes.string.isRequired,
-    }),
-  ).isRequired,
+  return (
+    <ul className="books-list-section">
+      {booksList
+        ? booksList.map((book) => <BookItem key={book.id} book={book} />)
+        : 'Loading...'}
+    </ul>
+  );
 };
+
 export default BookList;
