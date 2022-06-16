@@ -1,6 +1,8 @@
+// Types to use in action
 const ADD_BOOK = 'bookStore/books/ADD_BOOK';
 const REMOVE_BOOK = 'bookStore/books/REMOVE_BOOK';
 const FETCH_BOOKS = 'bookStore/books/FETCH_BOOKS';
+// API link
 const urlLink = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/nLWTCtKLtMsTD4SLP7sL/books';
 
 const initialState = [];
