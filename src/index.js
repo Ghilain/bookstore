@@ -14,7 +14,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-    {/* Add Provider */}
+      {/* Add Provider */}
       <Provider store={store}>
         <BookstoreContainer />
       </Provider>
