@@ -8,6 +8,9 @@ Created using an MVP version of it that allows to perform that actvities. By bui
 - React
 - Redux
 
+## Live Demo
+
+[Live Demo Link](https://livedemo.com)
 
 ### Prerequisites
 
@@ -70,3 +73,22 @@ npm start
 - Twitter: [@GhilainIshimwe](https://twitter.com/GhilainIshimwe)
 - LinkedIn: [Ghilain Ishimwe](https://www.linkedin.com/in/ghilain-ishimwe-067a5b1b4/)
 
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/Ghilain/bookstore/issues).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Hat tip to anyone whose code was used
+- Inspiration
+- etc
+
+## 📝 License
+
+This project is [MIT](./LICENSE) licensed.

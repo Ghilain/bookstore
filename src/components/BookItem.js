@@ -6,7 +6,7 @@ import { deleteBook } from '../redux/books/books';
 
 const BookItem = ({ book }) => {
   const {
-    title, author, id,
+    title, author, id, category,
   } = book;
   const dispatch = useDispatch();
   const HandleRemove = () => {
@@ -22,6 +22,11 @@ const BookItem = ({ book }) => {
         Author:
         {author}
       </p>
+      <p>
+        Category:
+        {' '}
+        {category}
+      </p>
       <button type="button" onClick={HandleRemove}>
         Remove
       </button>
@@ -34,6 +39,7 @@ BookItem.propTypes = {
     title: PropTypes.string.isRequired,
     id: PropTypes.string.isRequired,
     author: PropTypes.string.isRequired,
+    category: PropTypes.string.isRequired,
   }).isRequired,
 };
 
