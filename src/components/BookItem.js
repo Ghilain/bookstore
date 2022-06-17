@@ -30,6 +30,12 @@ const BookItem = ({ book }) => {
       <button type="button" onClick={HandleRemove}>
         Remove
       </button>
+      <button type="button" onClick={HandleRemove}>
+        Remove
+      </button>
+      <button type="button" onClick={HandleRemove}>
+        Remove
+      </button>
     </li>
   );
 };
