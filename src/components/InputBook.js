@@ -49,42 +49,47 @@ const InputBook = () => {
     });
   };
   return (
-
-    <form className="form-container" onSubmit={submitBookToStore}>
-      <h1>ADD NEW BOOK</h1>
-      <input
-        type="text"
-        placeholder="Book title"
-        name="title"
-        onChange={onChange}
-        required
-        className="input-text"
-      />
-      <input
-        type="text"
-        placeholder="Author name"
-        name="author"
-        onChange={onChange}
-        required
-        className="input-text"
-      />
-      <select
-        placeholder="categories"
-        name="category"
-        onChange={onChange}
-        required
-      >
-        <option value="">Category</option>
-        <option value="Fiction">Fiction</option>
-        <option value="Poetry">Poetry</option>
-        <option value="Drama">Drama</option>
-        <option value="Romance">Romance</option>
-      </select>
-      <button type="submit" onClick={submitBookToStore}>
-        Add Book
-      </button>
-      <small>{errorMsg}</small>
-    </form>
+    <>
+      <div className="horizontalDivider" />
+      <section>
+        <h1 className="titleForm">ADD NEW BOOK</h1>
+        <form className="form-container" onSubmit={submitBookToStore}>
+          <input
+            type="text"
+            placeholder="Book title"
+            name="title"
+            onChange={onChange}
+            required
+            className="input-text"
+          />
+          <input
+            type="text"
+            placeholder="Author name"
+            name="author"
+            onChange={onChange}
+            required
+            className="input-text"
+          />
+          <select
+            placeholder="categories"
+            name="category"
+            onChange={onChange}
+            required
+            className="categoriesSelect"
+          >
+            <option value="">Category</option>
+            <option value="Fiction">Fiction</option>
+            <option value="Poetry">Poetry</option>
+            <option value="Drama">Drama</option>
+            <option value="Romance">Romance</option>
+          </select>
+          <button className="buttonAddd" type="submit" onClick={submitBookToStore}>
+            Add Book
+          </button>
+          <small>{errorMsg}</small>
+        </form>
+      </section>
+    </>
   );
 };
 

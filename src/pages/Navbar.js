@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom';
 import React from 'react';
+import { BsFillPersonFill } from 'react-icons/bs';
+import './pages.css';
 
 const Navbar = () => (
   <header className="navHeader">
@@ -14,6 +16,9 @@ const Navbar = () => (
         <Link to="/categories" className="active-link">
           Categories
         </Link>
+      </div>
+      <div className="profileicon">
+        <BsFillPersonFill className="iconprofile" />
       </div>
     </nav>
   </header>

@@ -15,7 +15,7 @@ const Categorypage = () => {
 
   return (
     <div>
-      <button onClick={handleCheckStatus} type="button">Check status</button>
+      <button className="checkstatus" onClick={handleCheckStatus} type="button">Check status</button>
       <h1>
         {data.categoryReducer.text}
       </h1>

@@ -10,7 +10,7 @@ Created using an MVP version of it that allows to perform that actvities. By bui
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://stirring-tarsier-db5c3f.netlify.app/)
 
 ### Prerequisites
 
