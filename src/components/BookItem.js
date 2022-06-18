@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 // add useDispatch
 import { useDispatch } from 'react-redux';
+// import { TbTallymark1 } from 'react-icons/tb';
 import { deleteBook } from '../redux/books/books';
 
 const BookItem = ({ book }) => {
@@ -14,28 +15,65 @@ const BookItem = ({ book }) => {
   };
   return (
     <li key={id}>
-      <p>
-        Book:
-        {title}
-      </p>
-      <p>
-        Author:
-        {author}
-      </p>
-      <p>
-        Category:
-        {' '}
-        {category}
-      </p>
-      <button type="button" onClick={HandleRemove}>
-        Remove
-      </button>
-      <button type="button" onClick={HandleRemove}>
-        Remove
-      </button>
-      <button type="button" onClick={HandleRemove}>
-        Remove
-      </button>
+      <div className="bookcontainer">
+        <div className="bookcontent">
+          <div className="bookInfo">
+            <h4 className="bookCategory">
+              {' '}
+              {category}
+            </h4>
+            <h2 className="bookTitle">
+              {title}
+            </h2>
+            <h6 className="bookAuthor">
+              {author}
+            </h6>
+            <div className="buttonContainer">
+            <button type="button" className="commentBtn">
+              Comment
+            </button>
+            <div className="linehot">
+            {''}
+            </div>
+            <button type="button" onClick={HandleRemove} className="removeBtn">
+              Remove
+            </button>
+            <div className="linehot">
+            {''}
+            </div>
+            <button type="button" className="editBtn">
+              Edit
+            </button>
+            </div>
+          </div>
+
+          <div className="progressContainer">
+          <div className="progressCirclecontainer">
+          <div className="progressCircle">
+          {''}
+          </div>
+          </div>
+          <div className="progressStatus">
+            <p className="progressPercent">67%</p>
+            <p className="progressComplete">Completed</p>
+            </div>
+          
+          <div className="dividerProgress" />
+          {' '}
+          <div className="currentChapStat">
+          <div>
+            <p className="currentChap">CURRENT CHAPTER</p>
+            <p className="chapterNum">Chapter 12</p>
+            </div>
+            <div>
+            <button type="button" className="progressBtn">
+              UPDATE PROGRESS
+            </button>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
     </li>
   );
 };
