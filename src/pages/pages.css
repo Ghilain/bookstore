@@ -21,7 +21,8 @@
   letter-spacing: normal;
   color: #0290ff;
 }
-.progressCircle{
+
+.progressCircle {
   position: absolute;
   border-radius: 50%;
   width: 4.25rem;
@@ -31,54 +32,66 @@
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-.progressPercent, .progressComplete{
-  font-family: "Montserrat",sans-serif;
+
+.progressPercent,
+.progressComplete {
+  font-family: "Montserrat", sans-serif;
   color: #121212;
 }
-.progressPercent{
+
+.progressPercent {
   font-size: 2rem;
 }
-.progressComplete{
-  font-size: .875rem;
-  opacity: .5;
+
+.progressComplete {
+  font-size: 0.875rem;
+  opacity: 0.5;
 }
-.currentChap, .chapterNum{
-  font-family: "Roboto Slab",serif;
+
+.currentChap,
+.chapterNum {
+  font-family: "Roboto Slab", serif;
   font-weight: 300;
   color: #121212;
 }
-.currentChap{
-  font-size: .813rem;
-  opacity: .5;
+
+.currentChap {
+  font-size: 0.813rem;
+  opacity: 0.5;
 }
-.bookcontainer{
+
+.bookcontainer {
   background-color: #fff;
   border-radius: 4px;
   border: 1px solid #e8e8e8;
   padding: 2rem;
 }
-.chapterNum{
-  margin-top: .438rem;
+
+.chapterNum {
+  margin-top: 0.438rem;
   font-size: 1rem;
-  letter-spacing: -.4px;
+  letter-spacing: -0.4px;
 }
-.progressBtn{
+
+.progressBtn {
   cursor: pointer;
   border: none;
   background-color: #0290ff;
   border-radius: 3px;
   padding: 8px 24px;
-  font-family: "Roboto Slab",serif;
+  font-family: "Roboto Slab", serif;
   font-weight: 300;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
   color: #fff;
 }
-.dividerProgress{
-  width: .125rem;
+
+.dividerProgress {
+  width: 0.125rem;
   height: 4.375rem;
   margin: 0 3.688rem 0 4.938rem;
   background-color: #e8e8e8;
 }
+
 .active-link {
   width: 3.688rem;
   height: 1rem;
@@ -120,16 +133,23 @@
   color: #0290ff;
   padding: 0.8rem 0.7rem 0.4rem 0.9rem;
 }
-.bookcontent{
+
+.bookcontent {
   display: flex;
   justify-content: space-between;
 }
-.bookInfo{
+
+.bookInfo {
   display: flex;
   flex-direction: column;
   width: 100%;
 }
-.buttonContainer{
+
+.container {
+  padding: 4%;
+}
+
+.buttonContainer {
   display: flex;
   align-items: center;
   margin-top: 1.313rem;
